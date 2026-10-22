@@ -1,0 +1,31 @@
+{
+  "name": "swamp-signal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An independent, source-linked reading room for IdentityMD community tweets.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "validate": "node scripts/validate.mjs",
+    "social-card": "node scripts/social-card.mjs",
+    "measure-contrast": "node scripts/measure-contrast.mjs"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "playwright": "1.64.1",
+    "typescript": "5.9.3",
+    "vite": "8.3.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
